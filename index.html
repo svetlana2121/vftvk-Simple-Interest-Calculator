@@ -2,11 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <title>Simple Interest Calculator</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+            <div class="contents">
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td class="labels">Amount</td>
+                            <td>
+                                <input type="number" id="principal">
+                            </td>
+                       </tr>
+                       <tr>
+                           <td class="labels">Interest Rate</td>
+                           <td>
+                               <input type="range" id="Rate" name="rate" min="0" max="100" step="0.5" value="5" onchange="SliderValue()">
+                               <span id="rate_display">5%</span>
+                           </td>
+                       </tr>    
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
