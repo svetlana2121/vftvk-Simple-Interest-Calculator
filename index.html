@@ -24,13 +24,34 @@
                                <input type="range" id="Rate" name="rate" min="0" max="100" step="0.5" value="5" onchange="SliderValue()">
                                <span id="rate_display">5%</span>
                            </td>
-                       </tr>    
-
+                       </tr>
+                       <tr>
+                           <td class="labels">No. of Years</td>
+                           <td>
+                               <select name="years" id="years">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                               </select>
+                           </td>     
+                      </tr>
+                  </tbody>
+                </table>  
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
         No. of Years <input type="number"  id="years">  <br/>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        <button id="compute" onclick="compute()">Compute</button><br>
+                <span id="result">
+                </span>
+            </div>     
     </body>
 </html>
